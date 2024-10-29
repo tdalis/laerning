@@ -141,10 +141,10 @@ Earlier on we saw that we can use the ```()``` symbols as the order of operation
 
 Same as in maths, we can use PEMDAS to help us remember the order of operations:
 
-1. <strong>P</strong>arentheses (whatever is inside the parentheses is performed first)
-2. <strong>E</strong>xponents
-3. <strong>M</strong>ultiplication and <strong>D</strong>ivision (from left to right)
-4. <strong>A</strong>ddition and <strong>S</strong>ubtraction (from left to right)
+1. <strong>P</strong>parentheses (whatever is inside the parentheses is performed first)
+2. <strong>E</strong>exponents
+3. <strong>M</strong>multiplication and <strong>D</strong>division (from left to right)
+4. <strong>A</strong>addition and <strong>S</strong>subtraction (from left to right)
 
 C# follows the same order as PEDMAS except for exponents.
 
