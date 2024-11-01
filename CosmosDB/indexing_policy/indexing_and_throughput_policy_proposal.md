@@ -178,3 +178,11 @@ SELECT * FROM container c WHERE c.property1 = 'value' ORDER BY c.property1, c.pr
 SELECT * FROM container c WHERE c.property1 = 'value' AND c.property2 > 'value'
 ```
 
+To assess whether we need composite index, we have to define the queries we expect our API to use and if there are queries that have:
+- ```ORDER BY``` on multiple properties
+- A filter and ```ORDER BY``` so that they can utilise a composite index if the filter property is added to the ```ORDER BY``` clause
+- A filter on two or more properties where at least one property is an equality filter.
+
+The definition of the queries will be derived from the business needs. For example, one of my recent projects required me to build GET API end-points for specific IoT business usages. Understanding who in the business would use the API end-points and what answers they are looking to get from the data allows us to define our queries.
+
+Once we have defined our queries, we can then assess whether they meet the criteria for composite index requirements.
